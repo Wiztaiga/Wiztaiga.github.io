@@ -7,19 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form>
         <label for="isbn">寿司ネタ：</label>
         <select name="sushi" id="sushi">
             <option value="maguro.html">まぐろ</option>
             <option value="sarmon.html">サーモン</option>
             <option value="egg.html">たまご</option>
         </select>
-    
-    <img src="https://Wiztaiga.github.io/salmon.jpg" alt="サーモン">
+    </form>
+    <img src="https://Wiztaiga.github.io/salmon.jpg" alt="さーもん">
     <script>
     document.addEventListener('DOMContentLoaded',function(){
         document.getElementById('sushi').addEventListener('change',function(){
-            location.href=　"https://Wiztaiga.github.io/" + this.value;
+            location.href="https://Wiztaiga.github.io/" + this.value;
         },false);
     },false);
     </script>
