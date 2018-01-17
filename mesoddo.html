@@ -7,6 +7,8 @@
     <title>メソッド</title>
 </head>
 <body>
+        <label for="isbn">寿司ネタ：</label>
+        <form>
         <select name="isbn" id="isbn">
                 <option value>選択してください</option> 
                 <option value="maguro.html">マグロ</option>
@@ -80,12 +82,6 @@
             <br>ウィンドウが重なっている場合には指定したウィンドウが前面へ移動する</p>
         <h5>サンプル</h5>
         <p>サンプルで確かめてみましょう。</p>
-        <script>
-                function sampleOpenWindow() {
-                    sampleWindow = window.open('samplef.html', 'sample', 'width=300,height=300');
-                    sampleWindow.focus();
-                }
-            </script>
         
         <p id="choi">JavaScriptの場合</p>
         <pre>
@@ -105,12 +101,15 @@
             </h3>
         </pre>
         <script>
-            document.addEventListener('DOMContentLoaded',function(){
-            document.getElementById('osusi').addEventListener('change',function(){
-        　　location.href = 'https://terufotball417soccer.github.io/'+ this.value;
-        },false);
-            },false);
-        
+ document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById('sushi').addEventListener('change',function(){
+        location.href="https://Wiztaiga.github.io/" + this.value;
+    },false);
+},false);
+function sampleOpenWindow() {
+                    sampleWindow = window.open('samplef.html', 'sample', 'width=300,height=300');
+                    sampleWindow.focus();
+                }
         </script>
     </html>
 </body>
