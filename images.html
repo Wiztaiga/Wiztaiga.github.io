@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -56,4 +57,64 @@ window.addEventListener("load", function(){
 <button>画像を変更</button>
 <p><img id ="image" src="./images/7--chnology.jpg" alt="オクトキャット" width="60%" height="60%"/></p>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script>
+window.addEventListener("load", function(){
+    <form>
+        <label for="isbn">寿司ネタ：</label>
+        <select name="sushi" id="sushi">
+            <option value="">-------好きな寿司！--------</option>
+            <option value="maguro.html">まぐろ</option>
+            <option value="sarmon.html">サーモン</option>
+            <option value="egg.html">たまご</option>
+            <option value="images.html">画像</option>
+
+        </select>
+    </form>
+    document.addEventListener('DOMContentLoaded',function(){
+        document.getElementById('sushi').addEventListener('change',function(){
+            location.href="https://Wiztaiga.github.io/" + this.value;
+        },false);
+    },false);
+
+    // 画像インデックス
+    var imageIndex = 0;
+
+    // リスナー登録
+    document.getElementsByTagName("button")[0].addEventListener("click", function(){
+        // 画像イメージをインクリメント
+        if (imageIndex < 3) {
+            imageIndex++;
+        } else {
+            imageIndex = 0;
+        }
+        // 画像srcを変更
+        switch(imageIndex) {
+            case 0:
+                imageSrc = "./images/7--chnology.jpg";
+                break;
+            case 1:
+                imageSrc = "github_img5.png";
+                break;
+            case 2:
+                imageSrc = "--web-development-art-design.jpg";
+                break;
+            
+        }
+        document.getElementById("image").src = imageSrc;
+
+    }, false);
+});
+</script>
+</head>
+<body>
+<button>画像を変更</button>
+<p><img id ="image" src="./images/7--chnology.jpg" alt="オクトキャット" width="60%" height="60%"/></p>
+</body>
+>>>>>>> 53e869ce1a3371aef16118a35e63d5e66aa8d1cc
 </html>
