@@ -4,60 +4,64 @@
 <head>
 <meta charset="utf-8">
 <title></title>
+</head>
+<body>
+        <form>
+                <label for="isbn">寿司ネタ：</label>
+                <select name="sushi" id="sushi">
+                    <option value="">-------好きな寿司！--------</option>
+                            <option value>選択してください</option> 
+                            <option value="maguro.html">マグロ</option>
+                            <option value="sarmon.html">サーモン</option>
+                            <option value="egg.html">タマゴ</option>
+                            <option value="githubtutorial.html">Github使い方</option>
+                            <option value="images.html">画像変更</option>
+                            <option value="mesoddo.html">メソッドの使い方</option>
+                            <option value="burauzahantei.html">ブラウザ判定</option>
+                            <option value="timer.html">タイマー</option>
+                </select>
+            </form>
+    
+    
+<button>画像を変更</button>
+<p><img id ="image" src="./images/7--chnology.jpg" alt="オクトキャット" width="60%" height="60%"/></p>
 <script>
-window.addEventListener("load", function(){
-    <form>
-                <select name="isbn" id="isbn">
-                        <label for="isbn">寿司ネタ：</label>
-          <option value>選択してください</option> 
-          <option value="maguro.html">マグロ</option>
-          <option value="sarmon.html">サーモン</option>
-          <option value="egg.html">タマゴ</option>
-          <option value="githubtutorial.html">Github使い方</option>
-          <option value="images.html">画像変更</option>
-          <option value="mesoddo.html">メソッドの使い方</option>
-          <option value="burauzahantei.html">ブラウザ判定</option>
-          <option value="timer.html">タイマー</option>
-      </select>
-    </form>
     document.addEventListener('DOMContentLoaded',function(){
         document.getElementById('sushi').addEventListener('change',function(){
             location.href="https://Wiztaiga.github.io/" + this.value;
         },false);
     },false);
 
-    // 画像インデックス
-    var imageIndex = 0;
+// 画像インデックス
+var imageIndex = 0;
 
-    // リスナー登録
-    document.getElementsByTagName("button")[0].addEventListener("click", function(){
-        // 画像イメージをインクリメント
-        if (imageIndex < 3) {
-            imageIndex++;
-        } else {
-            imageIndex = 0;
-        }
-        // 画像srcを変更
-        switch(imageIndex) {
-            case 0:
-                imageSrc = "./images/7--chnology.jpg";
-                break;
-            case 1:
-                imageSrc = "github_img5.png";
-                break;
-            case 2:
-                imageSrc = "--web-development-art-design.jpg";
-                break;
-            
-        }
-        document.getElementById("image").src = imageSrc;
+// リスナー登録
+document.getElementsByTagName("button")[0].addEventListener("click", function(){
+    // 画像イメージをインクリメント
+    if (imageIndex < 3) {
+        imageIndex++;
+    } else {
+        imageIndex = 0;
+    }
+    // 画像srcを変更
+    switch(imageIndex) {
+        case 0:
+            imageSrc = "./images/7--chnology.jpg";
+            break;
+        case 1:
+            imageSrc = "./images/github_img5.png";
+            break;
+        case 2:
+            imageSrc = "./images/--web-development-art-design.jpg";
+            break;
+        case 3:
+            imageSrc = "./images/tako.jpg";
+            break;
+        
+    }
+    document.getElementById("image").src = imageSrc;
 
-    }, false);
-});
+}, false);
 </script>
-</head>
-<body>
-<button>画像を変更</button>
-<p><img id ="image" src="./images/7--chnology.jpg" alt="オクトキャット" width="60%" height="60%"/></p>
 </body>
 </html>
