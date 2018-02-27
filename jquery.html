@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <style>
+        table { background: #666; }
+tr { background: #fff; }
+td { padding: 5px; }
+.odd { background: #ddd; }
+
+.labelfocus {
+  color:#f39;
+}
+</style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+ 
+ $(function(){
+  $('a img').hover(function(){
+    $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+  }, function(){
+    if (!$(this).hasClass('currentPage')) {
+      $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+    }
+  });
+});
+$(function(){
+    $("tr:even").addClass("odd");
+});
+$(function () {
+    $("form :input").focus(function() {
+        $("label[for='" + this.id + "']").addClass("labelfocus");
+    });
+    
+    $("form :input").blur(function() {
+        $("label[for='" + this.id + "']").removeClass("labelfocus");
+    });
+});
+   </script>
+   <h1>jQueryの課題</h1>
+   <p>1.マウスオーバー</p>
+   <a href="#">
+        <img src="http://webcreatorbox.com/sample/images/btn_sample_off.jpg" alt="btn_sample_off" width="196" height="47" />
+      </a>
+       <p>2.テーブルの偶数・奇数の行の色を変える</p>
+       <table>
+            <tr>
+              <td>こんな感じで</td>
+              <td>奇数の行に</td>
+            </tr>
+            <tr>
+              <td>色が</td>
+              <td>つきます。</td>
+            </tr><tr>
+              <td>こんな感じで</td>
+              <td>奇数の行に</td>
+            </tr>
+            <tr>
+              <td>色が</td>
+              <td>つきます。</td>
+            </tr>
+          </table>
+<p>3.フォーカスしているフォームのラベルにクラスをつける</p>
+          <form action="#">
+                <label for="name">お名前</label>
+                <input type="text" id="name" />&nbsp;
+                <label for="spanail">メールアドレス</label>
+                <input type="text" id="spanail" />
+              </form>
+              <a href="https://www.webcreatorbox.com/tech/jquery-tips20">引用元:https://www.webcreatorbox.com/tech/jquery-tips20</a>
+
+    
+</body>
+</html>
