@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+
+body{
+ margin: 0;
+  padding: 0; 
+}
+
+header{
+  width: 100%;
+  height: 66px;
+  background: #fff;
+  border-top: 4px solid #0054a7;
+}
+
+.inner{
+  max-width: 980px;
+  margin: auto;
+  padding-top:22px;
+}
+
+main{
+  max-width: 980px;
+  margin: auto;
+}
+
+main h2{
+  text-align: center;
+}
+
+main h2 img{
+  max-width: 100%;
+}
+
+.movie{
+  background: #0054a7;
+  width: 100%;
+  height: 407px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.taiken2{
+  width: 300px;
+  height:400px;
+}
+.taikenCont{
+	background:url(/img/oc/bg_dot.gif) repeat 0 0;
+}
+.scheduleCont{
+	background:url(/img/oc/bg_line.gif) repeat 0 0;
+}
+.scheduleCont .innerCont{
+	width:980px;
+	margin:0 auto;
+	padding-bottom:49px;
+	background:url(/img/oc/bg_schedule_illust.png) no-repeat 0 44px;
+}
+.scheduleCont h2{
+	text-align:center;
+	padding-top:58px;
+}
+.scheduleCont ul{
+	margin-top:58px;
+	height:749px;
+	background:url(/img/oc/bg_schedule.png) no-repeat 2px 0;
+	position:relative;
+}
+.scheduleCont li{
+	width:200px;
+	position:absolute;
+}
+
+.scheduleCont li.step1{ top:-23px; left:12px;}
+.scheduleCont li.step2{ top:-23px; left:235px;}
+.scheduleCont li.step3{ top:-23px; left:487px;}
+.scheduleCont li.step4{ top:231px; left:521px;}
+.scheduleCont li.step5{ top:231px; left:47px;}
+.scheduleCont li.step6{ top:495px; left:47px;}
+.scheduleCont li.bus1{ top:-51px; left:90px;}
+.scheduleCont li.bus2{ top:459px; left:157px;}
+
+.scheduleCont li .time{
+	font-size:24px;
+	font-weight:bold;
+	color:#0054a7;
+	margin-top:2px;
+}
+.scheduleCont li h3{
+	font-size:24px;
+	font-weight:bold;
+	margin-top:-2px;
+}
+.scheduleCont li .txt{
+	line-height:1.5;
+}
+.courseBox{
+	width:980px;
+	margin:0 auto;
+	padding-top:52px;
+	background:url(/img/oc/bg_taiken_illust.png) no-repeat 0 49px;
+}
+.courseBox h2{
+	text-align:center;
+}
+.courseBox .innerCont{
+	margin-top:40px;
+}
+.courseBox .courseTit{
+	position:relative;
+}
+.courseTit li{
+	position:absolute;
+}
+.courseTit li.system{ top:-17px; left:-16px; }
+.courseTit li.business{ top:-17px; left:320px; }
+.courseTit li.design{ top:-17px; left:654px; }
+
+.courseBox .innerCont .add{
+	margin-top:-10px;
+}
+.courseBox .innerCont .add li{
+	padding-left: 1.3em;
+	text-indent: -1.3em;
+	font-size:12px;
+	padding-bottom:3px;
+}
+.courseBox .innerCont .add li a{
+    text-decoration: underline;
+}
+
+.taikenList{
+	width:990px;
+	margin-right:-25px;
+	overflow:hidden;
+	clear:both;
+}
+
+.taikenList > li{
+	width:300px;
+	background:#fff;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	-webkit-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	-moz-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	overflow:hidden;
+	float:left;
+	margin:0 25px 30px 0;
+}
+.taikenList li .title{
+	position:absolute;
+	left:-16px;
+	top:-17px;
+}
+.taikenList li .img{
+	width:290px;
+	margin:7px 7px 0 7px;
+}
+.taikenList li p{
+	color:#666;
+	margin:16px 20px 0;
+	letter-spacing:0.5px;
+	text-align:justify;
+}
+.taikenList li p span{
+	display:block;
+	font-weight:bold;
+	color:#333;
+	margin:4px 0 -3px;
+}
+.taikenList li dl{
+	margin:8px 20px 15px;
+	background:url(/img/oc/line_dot_1.gif) repeat-x 0 0;
+	padding-top:14px;
+}
+.taikenList li dt{
+	margin-bottom:4px;
+}
+.taikenList li dl li{
+	font-weight:bold;
+	line-height:1.4;
+}
+.taikenList li dl li span{
+	font-size:12px;
+	font-weight:normal;
+}
+
+.tokutenBox{
+	width:950px;
+	padding:0 3px 40px;
+	margin:15px auto 0;
+	background:url(/img/oc/bg_tokuten.png) no-repeat 0 39px;
+	min-height:600px;
+}
+.tokutenBox h2{
+	text-align:center;
+}
+.tokutenBox ul{
+	overflow:hidden;
+	clear:both;
+	margin-top:32px;
+}
+.tokutenBox li{
+	list-style: none;
+	width:200px;
+	float:left;
+	padding:0 29px 0 30px;
+	background:url(img/line_dot_2.gif) repeat-y 0 0;
+}
+.tokutenBox li:first-child{
+	background:none;
+}
+.tokutenBox li .tokutenTit{
+	text-align:center;
+}
+.tokutenBox li h3{
+	font-size:22px;
+	font-weight:bold;
+	line-height:1.3;
+	padding:16px 0 6px;
+	height:59px;
+	display:table-cell;
+	vertical-align:middle;
+}
+.tokutenBox li h3 small{
+	font-size:13px;
+}
+.tokutenBox li h3 span{
+	color:#0054a7;
+}
+.tokutenBox li p{
+	color:#666;
+	letter-spacing:0.5px;
+}
+.tokutenBox li p span{
+	font-size:12px;
+}
+.tokutenBox li a{
+	font-weight:bold;
+	background:url(/img/oc/icn_arrow.png) no-repeat 0 5px;
+	padding:0 0 0 17px;
+	color:#333;
+	display:inline-block;
+	margin-top:4px;
+	text-decoration:underline;
+}
+
+
+/* お申込みボタン
+-----------------------------------------------*/
+.omousikomi{
+	background:#fffcdf;
+}
+.omousikomi .inner{
+	width:1008px;
+	padding:48px 0 58px;
+	margin:0 auto;
+	background:url(/img/oc/img_btn.png) no-repeat 818px bottom;
+	text-align:center;
+}
+.omousikomi .inner p{
+	margin-left:4px;
+}
+.omousikomi .inner a{
+	padding:25px 0 20px;
+	display:block;
+	background:#0054a7;
+	width:602px;
+	margin:0 auto;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	color:#fff;
+	font-size:28px;
+	font-weight:bold;
+	-moz-border-radius:5px;
+	margin-top:13px;
+}
+.omousikomi .inner span{
+	background:url(/img/oc/icn_btn_arrow.png) no-repeat 0 7px;
+	padding-left:61px;
+}
+
+
+/* 一日の流れ */
+.schedule{
+	max-width: 980px;
+	margin:auto; 
+}
+.schedule2 h3{
+	margin-top:-75px;
+	margin-left: 100px;
+}
+.schedule2 p{
+	margin-left: 100px;
+	margin-top: -10px;
+}
+}
+.qanda p{
+  font-weight: boid;
+  font-size: 26px;
+}
+
+.qanda span{
+  padding-right: 20px
+}
+
+.qanda .ques{
+  color:#0054a4;
+}
+.qanda .answ{
+  color:#ff6666;
+}
+
+.kyan{
+  font-size:100%;
+}
+
+footer{
+  width: 100%;
+  height: 150px;
+  background: #999;
+}
