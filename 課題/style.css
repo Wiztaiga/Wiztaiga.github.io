@@ -1,8 +1,7 @@
 
 li {
   display: inline;
-  width: 200px;
-  height: 200px;
+
   }
   
 
@@ -15,9 +14,12 @@ li {
     font-family: 'Merienda', cursive;
   }
 
-  p{
+  /* p{
     width: 769px;
   }
-  
+  */
+  img#iiim{
+    width: 75%;
+  }
 
   
